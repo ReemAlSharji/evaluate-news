@@ -1,6 +1,6 @@
 // js and sass files
-import { handleSubmit } from './js/formHandler'
-import { check_url_validaty } from './js/check_url'
+import { handleSubmit } from 'src/client/js/formHandler.js'
+import { check_url_validaty } from 'src/client/js/check_url.js'
 import './styles/resets.scss'
 import './styles/footer.scss'
 import './styles/form.scss'

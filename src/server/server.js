@@ -22,15 +22,13 @@ app.get('/', function (req, res) {
 const port = 8000
 
 // POST method route
-app.post('/add', addInfo);
+app.post('/post', addInfo);
 
 function addInfo(req, res) {
-    responseData['text'] = req.body.text;
-    responseData['subjectivity'] = req.body.subjectivity;
-    responseData['polarity'] = req.body.polarity;
+    responseData['text'] = req.body;
     res.send(responseData);
 }
 
 app.listen(port, function () {
-    console.log('Example app listening on port 8000!')
+    console.log('Reem\'s app listening on port 8000!')
 })
